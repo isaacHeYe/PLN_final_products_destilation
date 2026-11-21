@@ -25,7 +25,7 @@ El cuaderno instala las dependencias de entrenamiento en Colab y registra sus ve
 
 ## Instalación y uso
 
-### Opción A: Google Colab
+###  Google Colab
 
 1. Abre [el cuaderno de entrega](notebooks/15_entrega_comparacion_docente.ipynb) en Colab desde GitHub o subiéndolo desde tu equipo.
 2. Ejecuta las celdas con `EJECUTAR = False` para consultar los resultados históricos. No se inicia entrenamiento.
@@ -33,32 +33,6 @@ El cuaderno instala las dependencias de entrenamiento en Colab y registra sus ve
 4. Ejecuta las celdas en orden y, cuando se solicite, sube `paquete_lora_autorizado_20261120.zip`.
 5. Al terminar, descarga el ZIP de resultados y verifica `resultados/estado.json`. En la sección de comparación, indica la ruta de ese ZIP en `resultados_nuevos` y ejecuta la celda para añadir las métricas disponibles.
 6. Desconecta el entorno de ejecución una vez verificada la descarga. Los límites del cuaderno interrumpen el trabajo, pero no desconectan automáticamente la GPU.
-
-### Opción B: consulta local
-
-1. Clona el repositorio y entra a su carpeta:
-
-   ```bash
-   git clone https://github.com/isaacHeYe/PLN_final_products_destilation.git
-   cd PLN_final_products_destilation
-   ```
-
-2. Crea y activa un entorno virtual:
-
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-
-   En Windows usa `.venv\Scripts\activate`.
-
-3. Instala los requerimientos para consultar el cuaderno:
-
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-
-4. Ejecuta `jupyter notebook` y abre `notebooks/15_entrega_comparacion_docente.ipynb`. Mantén `EJECUTAR = False` para consultar las métricas históricas sin GPU.
 
 ## Datos y evaluación
 
