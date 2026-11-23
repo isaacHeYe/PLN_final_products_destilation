@@ -26,4 +26,4 @@ Cada ZIP contiene `resultados/configuracion.json`, `metricas.json` y un JSON de 
 
 Se necesita el modelo base [Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B), revisión `1cfa9a7208912126459214e8b04321603b3df60c`, y las versiones indicadas en la configuración. El cuaderno de entrega documenta el formato de la instrucción y la aplicación de los vectores suaves y LoRA. Para usar el mixto no basta con cargar únicamente el adaptador LoRA. Los paquetes no permiten reanudar el optimizador: contienen solo lo necesario para recuperar los adaptadores y consultar los resultados.
 
-Los productos son derivados de [Amazon ESCI](https://github.com/amazon-science/esci-data). Las evaluaciones humanas están pendientes.
+Los productos son derivados de [Amazon ESCI](https://github.com/amazon-science/esci-data). La [evaluación humana exploratoria](EVALUACION_HUMANA.md) contiene una evaluación anónima de diez productos; no permite estimar acuerdo entre evaluadores.
